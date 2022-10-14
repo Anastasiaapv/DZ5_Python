@@ -3,10 +3,10 @@
 
 # Пример: aaaaaaabbbbbbccccccccc => 7a6b9c и 11a3b7c => aaaaaaaaaaabbbccccccc
 
-with open('file_encode.txt', 'w') as data:
+with open('file1.txt', 'w') as data:
     data.write('aaaaaaabbbbbbtttttccccccccc')
 
-with open('file_encode.txt', 'r') as data:
+with open('file1.txt', 'r') as data:
     string = data.readline()
 
 def coding(txt):
@@ -33,10 +33,10 @@ def decoding(txt):
             number = ''
     return res
 
-with open('file_encode.txt', 'r') as file:
+with open('file1.txt', 'r') as file:
     decoded_string = file.read()
 
-with open('file_decode.txt', 'w') as file:
+with open('file2.txt', 'w') as file:
     encoded_string = coding(decoded_string)
     file.write(encoded_string)
 
